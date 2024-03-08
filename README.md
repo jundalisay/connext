@@ -2,6 +2,8 @@
 
 This is forked from https://github.com/vijaisuria/MediVirtuoso-ChatBot-Gemini-LLM
 
+Live Demo: https://connext-aqsytrschqjb6sxywxbape.streamlit.app/
+
 
 ## Defacto Requirements
 
@@ -54,6 +56,10 @@ Questions | Section | Answered?
 5. How can I file for overtime in Sprout? | Overtime | Yes, by tweaking the data
 
 
+![Question](connext01.jpg)
+
+![File Upload](connext02.jpg)
+
 
 ## Frameworks Attempted
 
@@ -86,3 +92,10 @@ streamlit run Leave_Policy.py
 ### Remote
 
 git remote add origin git@github.com:jundalisay/connext.git
+
+
+
+## TODO
+
+- Learn Streamlit to hide the data in the prompt and send the data only at the first question
+ 
