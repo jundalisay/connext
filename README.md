@@ -36,7 +36,7 @@ Live Demo: https://connext-aqsytrschqjb6sxywxbape.streamlit.app/
 
 ## Solution
 
-- Add a **definitions** file or section to the documents. If a document talks about a computation then there should be a formula section. This worked for ChatGPT, but not for Gemini.
+- Add a **definitions** file or section to the documents. If a document talks about a computation then there should be a **formula** section. This worked for ChatGPT, but not for Gemini.
 - The definitions 'bridge' company jargon with layman words   
   - Verbs should also be defined. (e.g filing a leave = asking for a leave from work)
 - Divide the questions into scenarios so that the app can accommodate more documents from other deparments
@@ -49,11 +49,11 @@ Live Demo: https://connext-aqsytrschqjb6sxywxbape.streamlit.app/
 
 Questions | Section | Answered?
 --- | --- | --- 
-1. Can we file for leave during PH Holidays? | Leave policy | Yes, by tweaking the data
-2. How are my leave credits calculated? | Leave policy | Yes, by tweaking the data
-3. In what instances would I get disqualified from a perfect attendance bonus? | Bonus and Benefits | Yes
-4. How does Connext calculate my taxes? | Leave policy | Yes, by adding new data
-5. How can I file for overtime in Sprout? | Overtime | Yes, by tweaking the data
+1 Can we file for leave during PH Holidays? | Leave policy | Yes, by tweaking the data
+2 How are my leave credits calculated? | Leave policy | Yes, by tweaking the data
+3 In what instances would I get disqualified from a perfect attendance bonus? | Bonus and Benefits | Yes
+4 How does Connext calculate my taxes? | Leave policy | Yes, by adding new data
+5 How can I file for overtime in Sprout? | Overtime | Yes, by tweaking the data
 
 
 ![Question](connext01.jpg)
@@ -98,4 +98,8 @@ git remote add origin git@github.com:jundalisay/connext.git
 ## TODO
 
 - Learn Streamlit to hide the data in the prompt and send the data only at the first question
- 
+
+
+## Author
+
+Juan Dalisay Jr.
