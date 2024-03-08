@@ -134,7 +134,8 @@ if prompt := st.chat_input(""):
     approval.    
     """
 
-    prompt = prompt.replace('\n', '  \n') + data
+    combined_prompt = prompt.replace('\n', '  \n') + data
+
     with st.chat_message("user"):
         st.markdown(prompt)
 
@@ -143,7 +144,7 @@ if prompt := st.chat_input(""):
         message_placeholder.markdown("Thinking...")
         try:
             full_response = ""
-            for chunk in chat.send_message(prompt, stream=True, safety_settings=SAFETY_SETTTINGS):
+            for chunk in chat.send_message(combined_prompt, stream=True, safety_settings=SAFETY_SETTTINGS):
                 word_count = 0
                 random_int = random.randint(5, 10)
                 for word in chunk.text:

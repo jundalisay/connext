@@ -97,7 +97,7 @@ git remote add origin git@github.com:jundalisay/connext.git
 
 ## TODO
 
-- Learn Streamlit to hide the data in the prompt and send the data only at the first question
+- Learn Streamlit to send the data only at the first question
 
 
 ## Author

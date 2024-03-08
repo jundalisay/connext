@@ -175,12 +175,10 @@ if prompt := st.chat_input(""):
     04:00 AM to 01:00 PM = 2 Hours LH-ND + 6 Hours LH (total of 8 hours holiday premium)
     06:00 AM to 03:00 PM = 8 Hours LH (total of 8 hours holiday premium)
     10:00 PM to 07:00 AM = 8 Hours LH-ND (total of 8 hours holiday premium)
-    Important Note: Holiday Rates used in Payroll Computation are consolidated rates. This means
-    that all Night Differential Rates during Holidays were considered and have a higher multiplier
-    compared to Night Differential Rate during an Ordinary Day.
+    Important Note: Holiday Rates used in Payroll Computation are consolidated rates. This means     that all Night Differential Rates during Holidays were considered and have a higher multiplier compared to Night Differential Rate during an Ordinary Day.
     """
 
-    prompt = prompt.replace('\n', '  \n') + data
+    combined_prompt = prompt.replace('\n', '  \n') + data
 
     with st.chat_message("user"):
         st.markdown(prompt)
@@ -190,7 +188,7 @@ if prompt := st.chat_input(""):
         message_placeholder.markdown("Thinking...")
         try:
             full_response = ""
-            for chunk in chat.send_message(prompt, stream=True, safety_settings=SAFETY_SETTTINGS):
+            for chunk in chat.send_message(combined_prompt, stream=True, safety_settings=SAFETY_SETTTINGS):
                 word_count = 0
                 random_int = random.randint(5, 10)
                 for word in chunk.text:
