@@ -55,6 +55,9 @@ Questions | Section | Answered?
 4 How does Connext calculate my taxes? | Leave policy | Yes, by adding new data
 5 How can I file for overtime in Sprout? | Overtime | Yes, by tweaking the data
 
+Additional Questions: 
+- I started working on Feb 2, 2024. Am I entitled to 13th month pay this year?
+
 
 ![Question](connext01.jpg)
 
